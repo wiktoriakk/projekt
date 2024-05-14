@@ -1,1 +1,21 @@
-API:
+API:sk-proj-isImJwCeAwIO2gt09WegT3BlbkFJAn7rxeZNWLSIkbVzBcHf
+
+#include <iostream>
+#include <nlohmann/json.hpp>
+
+using json = nlohmann::json;
+
+int main() {
+    // Tworzenie obiektu JSON
+    json j;
+
+    // Dodawanie danych do obiektu JSON
+    j["name"] = "John";
+    j["age"] = 30;
+    j["is_student"] = false;
+
+    // Wypisanie JSON na ekran
+    std::cout << j.dump(4) << std::endl;
+
+    return 0;
+}
